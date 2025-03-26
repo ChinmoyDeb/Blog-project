@@ -1,0 +1,77 @@
+body {
+    background-color: #F9F9F9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 97vw;
+    font-size: 12px;
+}
+
+#fullPost {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#fullPost h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#fullPost p:first-of-type {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#fullPost p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.tags {
+    font-size: 1rem;
+    color: #007BFF;
+}
+
+.tags span {
+    background-color: #E7F3FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.timestamp {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.likes {
+    font-size: 1rem;
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    #fullPost {
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+
+    #fullPost h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+}

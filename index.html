@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog.com</h1>
+        <div class="auth-container">
+            <button id="signInBtn">Sign In</button>
+            <button id="signOutBtn" style="display: none;">Sign Out</button>
+            <span id="userProfile">Not signed in</span>
+        </div>
+    </header>
+    
+    <nav>
+        <input type="text" id="searchBar" placeholder="Search posts...">
+    </nav>
+    
+    <main>
+        <button id="newPostBtn" class="floating-btn" style="display: none;">+</button>
+        <div id="posts"></div>
+    </main>
+    
+    <div id="postModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Create a Post</h2>
+            <input id="postTitle" type="text" placeholder="Title">
+            <textarea id="postContent" placeholder="Write your post..."></textarea>
+            <input id="postTags" type="text" placeholder="Tags (comma separated)">
+            <button id="submitPost">Publish</button>
+        </div>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
